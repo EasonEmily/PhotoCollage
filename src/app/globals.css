@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.drop-zone {
+  @apply border-2 border-dashed border-gray-300 rounded-xl p-8 text-center transition-all duration-200;
+}
+
+.drop-zone.active {
+  @apply border-primary-500 bg-primary-50;
+}
+
+.uploaded-photo {
+  @apply relative rounded-lg overflow-hidden shadow-md transition-transform duration-200 hover:scale-105;
+}
+
+.template-card {
+  @apply relative rounded-xl overflow-hidden cursor-pointer transition-all duration-200 hover:ring-4 hover:ring-primary-300;
+}
+
+.template-card.selected {
+  @apply ring-4 ring-primary-500;
+}
