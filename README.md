@@ -1,8 +1,14 @@
-# Photo Collage Web
+# AI Photo Collage
 
-> AI Photo Collage - 用 Next.js + Tailwind CSS 构建的合影生成平台
+> 把多张单人照合成逼真合照 — AI 让合照不再受距离限制
 
-## 技术栈
+## 项目状态
+
+This repository contains:
+- `/web` - Next.js + Tailwind CSS 前端实现（MVP）
+- `/AI_Photo_Collage_MVP.md` - 完整需求文档
+
+## web 目录 - 技术栈
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
@@ -18,9 +24,11 @@
 - 📖 使用教程页面
 - 🔒 隐私政策页面
 
-## 开发
+## 开发（web 目录）
 
 ```bash
+cd web
+
 # 安装依赖
 npm install
 
@@ -43,6 +51,12 @@ npm start
 - `/tutorial` - 使用教程
 - `/privacy` - 隐私政策
 
+## 产品目标
+
+用户上传多张单人照片，AI 自动将人物融合到一张合影图中，生成自然逼真的群体合照。
+
+**核心价值**：解决"想合照但人凑不齐"的场景痛点，让用户轻松获得"完美合照"。
+
 ---
 
-*这是 MVP 版本，AI 合成部分为模拟实现。*
+*这是 MVP 版本，前端 UI 已完成，AI 合成部分为模拟实现。*
